@@ -1,0 +1,54 @@
+<HTML>
+	<head>
+		<meta charset="utf-8">
+		<title>清除浮动</title>
+		<style type="text/css">
+			.child1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			.child2{
+				width: 200px;
+				height: 300px;
+				background-color: blue;
+			}
+			.container{
+				border: 1px solid #0c0;
+				/*方式2 这种方法子节点不能用position定位*/
+				/* width: 100%; */
+				/* overflow: auto; */
+			}
+			/*方法3*/
+			.clearflex:after{
+				display: block;
+				visibility: hidden;
+				clear: both;
+				height: 0;
+				content: ".";
+			}
+			.clearflex{
+				zoom:1;
+			}
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			/*方式1*/
+			/* .clear{
+				clear:both;
+			} */
+
+		</style>
+	</head>
+	<body>
+		<div class="container clearflex">
+			<div class='child1 fl'></div>
+			<div class='child2 fl'></div>
+			<!-- 方式1 -->
+			<!-- <div class='clear'></div> -->
+		</div>
+	</body>
+</HTML>
