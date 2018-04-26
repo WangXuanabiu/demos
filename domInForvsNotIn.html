@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+</head>
+<body>
+    <div id='parent'></div>
+    <button onclick="a()">a</button>
+    <button onclick="b()">b</button>
+    <script type="text/javascript">
+        var div = document.getElementById('parent');
+        function a(){
+            console.time('a')
+            for(var i=0;i<5000;i++){
+                div.innerHTML +='a';
+            }
+            console.timeEnd('a');
+        }
+        function b(){
+            console.time('b')
+            var re = '';
+            for(var i=0;i<5000;i++){
+                 re+='b';
+            }
+            div.innerHTML = re;
+            console.timeEnd('b');
+        }
+    </script>
+</body>
+</html>
