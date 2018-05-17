@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3实现平滑过渡</title>
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+	<!-- 告诉IE用高版本渲染 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- 不允许缩放，宽度为设备宽度 -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class='container'>
+		<div class='st-container'>
+			<!-- 导航开始 -->
+			<input type="radio" name="radio-set" checked='checked' id='st-control-1'>
+			<a href="#st-panel-1">导航1</a>
+			<input type="radio" name="radio-set" id='st-control-2'>
+			<a href="#st-panel-2">导航2</a>
+			<input type="radio" name="radio-set" id='st-control-3'>
+			<a href="#st-panel-3">导航3</a>
+			<input type="radio" name="radio-set" id='st-control-4'>
+			<a href="#st-panel-4">导航4</a>
+			<input type="radio" name="radio-set" id='st-control-5'>
+			<a href="#st-panel-5">导航5</a>
+			<!-- 导航结束 -->
+			<div class='st-scroll'>
+				<section class='st-panel' id='st-panel-1'>
+					<div class='st-desc' data-icon='H'></div>
+					<h2>标题1</h2>
+					<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容1</p>
+				</section>
+				<section class='st-panel st-color' id='st-panel-2'>
+					<div class='st-desc' data-icon='H'></div>
+					<h2>标题2</h2>
+					<p>内容2</p>
+				</section>
+				<section class='st-panel' id='st-panel-3'>
+					<div class='st-desc' data-icon='H'></div>
+					<h2>标题3</h2>
+					<p>内容3</p>
+				</section>
+				<section class='st-panel st-color' id='st-panel-4'>
+					<div class='st-desc' data-icon='H'></div>
+					<h2>标题4</h2>
+					<p>内容4</p>
+				</section>
+				<section class='st-panel' id='st-panel-5'>
+					<div class='st-desc' data-icon='H'></div>
+					<h2>标题5</h2>
+					<p>内容5</p>
+				</section>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
